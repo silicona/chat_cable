@@ -1,0 +1,23 @@
+
+<div class="dialogo">
+  <h1>Registrarse</h1>
+
+  <%= form_for(@usuario) do |f| %>
+    <%= render 'compartido/mensajes_error' %>
+
+    <%= f.label :nombre_usuario %>
+    <%= f.text_field :nombre_usuario %>
+
+    <%= f.label :password, "Contraseña" %>
+    <%= f.password_field :password %>
+
+    <%= f.label :password_confirmation, "Confirma tu contraseña" %>
+    <%= f.password_field :password_confirmation %>
+
+    <%= f.submit "Registrarse" %>
+  <% end %>
+  <ul class="sesion-links">
+    <li>¿Ya tienes una cuenta?</li>
+    <li><%= link_to "Acceder", root_path %></li>
+  </ul>
+</div>

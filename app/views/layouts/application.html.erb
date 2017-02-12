@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Chat con Cable</title>
+    <%= csrf_meta_tags %>
+
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <meta charset="utf-8">
+  </head>
+
+  <body>
+    <% flash.each do |tipo_mensaje, mensaje| %>
+      <div class="alert alert-<%= tipo_mensaje %> animatedDelay fadeOutUp"><%= mensaje %></div>
+    <% end %>
+    <%= render 'layouts/cabecera' %>
+    <%= yield %>
+  </body>
+</html>

@@ -1,0 +1,8 @@
+<header class="cabecera">
+  <a href="/" class="cabecera-logo"><%= render 'layouts/logo' %></a>
+  <ul class="cabecera-nav">
+    <% if ha_accedido? %>
+    <li><%= link_to "Cerrar sesión", salir_path, method: :delete %></li>
+    <% end %>
+  </ul>
+</header>

@@ -1,0 +1,7 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+# Método digerir en test/test_helper.rb
+
+ejemplo:
+  nombre_usuario: paco
+  password_digest: <%= digerir('password') %>
+

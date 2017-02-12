@@ -1,0 +1,11 @@
+# # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+
+# Anuladas
+# one:
+#   contenido: MyText
+#   usuario_id: one
+
+# two:
+#   contenido: MyText
+#   usuario_id: two

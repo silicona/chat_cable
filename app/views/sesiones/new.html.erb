@@ -1,0 +1,18 @@
+
+<div class="dialogo">
+  <%= form_for(:sesion, url: acceder_path) do |f| %>
+
+    <%= f.label :nombre_usuario, "nombre de usuario" %>
+    <%= f.text_field :nombre_usuario %>
+
+    <%= f.label :password %>
+    <%= f.password_field :password %>
+
+    <%= f.submit "Acceder" %>
+  <% end %>
+
+  <ul class="sesion-links">
+    <li>nueva usuaria?</li>
+    <li><%= link_to "Registrarse", new_usuario_path %></li>
+  </ul>
+</div>
