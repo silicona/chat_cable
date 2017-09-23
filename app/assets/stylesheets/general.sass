@@ -241,6 +241,14 @@ button, input[type="submit"]
   font-size: 13px
   margin-right: 10px
 
+// Cap 6.1 - Bloques de texto en el mensaje
+code
+  font-family: monospace
+  white-space: pre-wrap
+  padding: 9px 15px
+  display: inline-block
+  background-color: #eee
+
 .mensaje-contenido
   width: 100%
 
@@ -253,9 +261,41 @@ button, input[type="submit"]
     height: 100%
   textarea
     height: 100%
-    width: 84.5%
+    width: 100%
+    // width: 84.5%
   input
-    float: right
-    height: 100%
-    vertical-align: top
-    width: 14.5%
+    display: none
+    // float: right
+    // height: 100%
+    // vertical-align: top
+    // width: 14.5%
+
+
+blockquote
+  display: block
+  margin-top: 1em
+  margin-bottom: 1em
+  margin-left: 40px
+  margin-right: 40px
+  background: #eee
+  padding: 0.5em
+  font-style: italic
+
+// Menciones
+
+#mencion
+  position: absolute
+  top: 20%
+  left: 45%
+  background-color: #ccc
+  box-sizing: border-box
+  padding: 1ex
+  border-radius: 3pt
+
+#mencion_texto
+  text-align: center
+  padding: 2ex
+
+#mencion_boton
+  float: right
+  border-radius: 3pt

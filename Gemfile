@@ -16,6 +16,12 @@ gem 'jquery-rails',            '4.1.1'
 gem 'turbolinks',              '5.0.0'
 gem 'jbuilder',                '2.4.1'
 
+# Conversor de Markdown
+gem 'kramdown',                '1.12.0'
+
+# Gema de servidor en produccion
+gem 'redis',                   '3.3.1'
+
 group :development, :test do
   gem 'sqlite3', '1.3.11'
   gem 'byebug',  '9.0.0', platform: :mri

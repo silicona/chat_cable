@@ -1,6 +1,8 @@
 <div class="mensaje-entrada">
-  <%= form_for(@mensaje) do |f| %>
+	<!-- Cap 4.2- no refresca la pagina y permanece en root -->
+  <%= form_for(@mensaje, remote: true) do |f| %>
     <%= f.text_area :contenido %>
+    <!-- click() de sala.coffee necesita un submit que lo accione -->
     <%= f.submit "Enviar" %>
   <% end %>
 </div>

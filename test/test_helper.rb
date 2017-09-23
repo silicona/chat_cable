@@ -17,7 +17,14 @@ class ActiveSupport::TestCase
   def ha_accedido?
   	!cookies['usuario_id'].empty?
   end
+
+  def menciones?(mensaje, persona)
+    texto = mensaje[:mensaje][:contenido]
+    reg_exp = Regexp.new("@#{persona}")
+    reg_exp === texto
+  end
 end
+
 
 class ActionDispatch::IntegrationTest
 
@@ -25,5 +32,7 @@ class ActionDispatch::IntegrationTest
 		post acceder_url, params: { sesion: { nombre_usuario: usuario.nombre_usuario,
 																					password: password } }
 	end
+
+
 end	
 
