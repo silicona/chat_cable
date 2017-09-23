@@ -5,3 +5,6 @@ ejemplo:
   nombre_usuario: paco
   password_digest: <%= digerir('password') %>
 
+ejemplo2:
+  nombre_usuario: shilum
+  password_digest: <%= digerir('password') %>

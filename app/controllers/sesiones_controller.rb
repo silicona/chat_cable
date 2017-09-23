@@ -9,6 +9,7 @@ class SesionesController < ApplicationController
 		if usuario && usuario.authenticate(params[:sesion][:password])
 			acceso_a usuario
 			redirect_to mensajes_url
+			#redirect_to chat_url
 		else
 			flash.now[:danger] = 'Nombre de usuario o contraseña erroneo'
 			render 'new'

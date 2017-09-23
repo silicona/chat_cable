@@ -1,8 +1,9 @@
 <div class="mensaje">
   <div class="mensaje-usuario">
-    <%= mensaje.usuario.nombre_usuario %>:
+    <%= mensaje.usuario.nombre_usuario %>
   </div>
   <div class="mensaje-contenido">
-    <%= mensaje.contenido %>
+  	<!-- Cap 6.1 - Añadido de sanitize -->
+    <%= sanitize markdown_a_html(mensaje.contenido) %>
   </div>
 </div>
