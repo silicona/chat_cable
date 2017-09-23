@@ -21,5 +21,8 @@ test:
   database: db/chat_test.sqlite3
 
 production:
-  <<: *default
-  database: db/chat_prod.sqlite3
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  database: chat_pro/production.postgresql
+  username: root
