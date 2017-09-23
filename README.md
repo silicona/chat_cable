@@ -113,8 +113,8 @@ En este enlace, la [*Documentacion Kramdown*](https://kramdown.gettalong.org/doc
 
 ## Heroku
 
-URL - https://calm-scrubland-80216.herokuapp.com/
-Git - https://git.heroku.com/calm-scrubland-80216.git
+URL - https://chat-cable-hartl.herokuapp.com/
+Git - https://git.heroku.com/chat_cable_hartl.git
 
 Instalado el addons redistogo.
 
