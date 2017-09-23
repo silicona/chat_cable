@@ -101,3 +101,20 @@ En este enlace, la [*Documentacion Kramdown*](https://kramdown.gettalong.org/doc
     En app/assets/javascripts/channels/sala.coffee
       - alert("Tienes una mencion")
       - if(data-mensaje &&data.mensaje.blank?)
+
+## Heroku
+
+URL - https://calm-scrubland-80216.herokuapp.com/
+Git - https://git.heroku.com/calm-scrubland-80216.git
+
+Instalado el addons redistogo.
+
+Documentacion - <code>heroku addons:docs redistogo</code>
+
+URL Redistogo - redistogo-convex-90714 
+
+<code>heroku config | grep REDISTOGO_URL</code> - obtiene la url para config/cable.yml
+
+URL - <code>https://calm-scrubland-80216.herokuapp.com/</code>
+
+Modificado config/environments/production.rb
